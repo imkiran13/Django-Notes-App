@@ -12,10 +12,10 @@ pipeline{
                 }
             }
         }
-        stage("Code"){
+        stage("Checkout"){
             steps{
                script{
-                clone("https://github.com/imkiran13/Django-Notes-App.git","main")
+             code_checkout("https://github.com/imkiran13/Django-Notes-App.git","main")
                }
                 
             }
